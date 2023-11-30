@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+nav {
+    background-color: #FA6555;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 10px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline > h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    z-index: 3;
+}
+
+.headline > input {
+    border: none;
+    border-radius: 30px;
+    height: 28px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.pokeballSVG {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: #E15B4D;
+}
+
+.pokeballSVGHead {
+    position: relative;
+    top: -150px;
+    left: 200px;
+}
+
+.pokedexCase {
+   
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pokeballSVGGrass {
+   
+    width: 200px;
+    height: 200px;
+    fill: #60E3C4;
+}
+
+.pokeballSVGCase {
+position: absolute;
+top: 40px;
+left: 130px;
+}
+
+.pokemonCaseGrass {
+    position: relative;
+    min-height: 150px;
+    background-color: #2CDAB1;
+    width: 250px;
+    padding: 25px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #61E3C5;
+    border-radius: 30px;
+    padding: 1px;
+}
+
+.tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageContainer {
+    position: absolute;
+}
+
+.imageOfPokemon {
+    position: relative;
+    width: 150px;
+    left: 120px;
+    top: -35px;
+    z-index: 3;
+}
+
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.176);
+    height: 100vh;
+    z-index: 99;
+}
+
+.pokemonOverview {
+    width: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.stats {
+    background-color: #ffffff;
+    width: 600px;
+    min-height: 250px;
+    border-radius: 40px 40px 0 0 ;
+    padding: 50px;
+}
+
+.pokeballoverview {
+    position: relative;
+}
+
+.pokeballSVGGrassOverview {
+   position: absolute;
+    width: 250px;
+    height: 250px;
+    fill: #60E3C4;
+    right: -25px;
+    top: -20px;
+    z-index: 0;
+}
+
+.overviewPokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #2CDAB1;
+    width: 600px;
+    min-height: 150px;
+    padding: 0 50px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.navigation > a {
+    color: gray;
+    text-decoration: none;
+
+}
+
+.overviewName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    color: rgb(71, 71, 71);
+}
+
+.baseStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2CDAB1;
+    width: 250px;
+}
+
+.baseStats > ul > li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 250px;
+}

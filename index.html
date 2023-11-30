@@ -7,13 +7,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="#">
     <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     
     
 </head>
-<body>
+<body onload="loadPokemon()">
 
+<nav>
+    <div class="pokeballSVGHead">
+        <svg class="pokeballSVG" viewBox="0 0 8.467 8.467">
+            <path d="M4.232 289.46a3.307 3.307 0 0 0-3.271 2.844h2.324c.172-.35.53-.595.947-.595.416 0 .774.244.946.595h2.325a3.307 3.307 0 0 0-3.271-2.845zM.944 293.098a3.307 3.307 0 0 0 3.288 2.976 3.307 3.307 0 0 0 3.29-2.976h-2.29c-.14.42-.534.728-1 .728-.467 0-.86-.308-1-.728z" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+            <path d="M4.232 292.123a.646.646 0 0 0-.644.644c0 .354.29.644.644.644.354 0 .644-.29.644-.644a.647.647 0 0 0-.644-.644zm0 .264c.21 0 .38.169.38.38s-.17.38-.38.38a.377.377 0 0 1-.38-.38c0-.211.168-.38.38-.38z" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#E15B4D" color="#000" enable-background="accumulate" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+        </svg>
+    </div>
+    <div class="headline">
+        <h1>What Pokemon are you looking for?</h1>
+        <input type="text">
+    </div>
+    
+</nav>
+
+<div class="pokedexCase">
+      
+      <div class="pokemonCaseGrass">
+        <div class="tag">
+            <h2>Name</h2>
+            <p>Nummer</p>
+        </div>
+
+        <div class="type">
+            <span>type</span>
+        </div>
+
+        <div class="imageContainer">
+            <img class="imageOfPokemon" src="./1.png">
+        </div>
+                <div class="pokeballSVGCase">
+                    <svg class="pokeballSVGGrass" viewBox="0 0 8.467 8.467">
+                        <path d="M4.232 289.46a3.307 3.307 0 0 0-3.271 2.844h2.324c.172-.35.53-.595.947-.595.416 0 .774.244.946.595h2.325a3.307 3.307 0 0 0-3.271-2.845zM.944 293.098a3.307 3.307 0 0 0 3.288 2.976 3.307 3.307 0 0 0 3.29-2.976h-2.29c-.14.42-.534.728-1 .728-.467 0-.86-.308-1-.728z" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+                        <path d="M4.232 292.123a.646.646 0 0 0-.644.644c0 .354.29.644.644.644.354 0 .644-.29.644-.644a.647.647 0 0 0-.644-.644zm0 .264c.21 0 .38.169.38.38s-.17.38-.38.38a.377.377 0 0 1-.38-.38c0-.211.168-.38.38-.38z" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#60E3C4" color="#000" enable-background="accumulate" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+                    </svg>
+                </div>
+    </div>
+    
+</div>
+<div class="overview">
+    <div class="overviewPokemon">
+       <div class="pokeballoverview"> 
+        <img class="pokemonOverview" src="./1.png">
+            <svg class="pokeballSVGGrassOverview" viewBox="0 0 8.467 8.467">
+                <path d="M4.232 289.46a3.307 3.307 0 0 0-3.271 2.844h2.324c.172-.35.53-.595.947-.595.416 0 .774.244.946.595h2.325a3.307 3.307 0 0 0-3.271-2.845zM.944 293.098a3.307 3.307 0 0 0 3.288 2.976 3.307 3.307 0 0 0 3.29-2.976h-2.29c-.14.42-.534.728-1 .728-.467 0-.86-.308-1-.728z" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+                <path d="M4.232 292.123a.646.646 0 0 0-.644.644c0 .354.29.644.644.644.354 0 .644-.29.644-.644a.647.647 0 0 0-.644-.644zm0 .264c.21 0 .38.169.38.38s-.17.38-.38.38a.377.377 0 0 1-.38-.38c0-.211.168-.38.38-.38z" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#60E3C4" color="#000" enable-background="accumulate" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
+            </svg>
+        
+            
+        </div>
+
+        <div class="stats">
+    
+            <div class="overviewName">
+                <h1>Name</h1>
+                <p>#001</p>
+            </div>
+            
+    
+            <div class="navigation">
+                <a href="#">About</a>
+                <a href="#">Base Stats</a>
+                <a href="#">Moves</a>
+            </div>
+
+            <span class="about">
+                Dieses Pokémon trägt von Geburt an einen Samen auf dem Rücken, der im Laufe der Zeit keimt und wächst.
+            </span>
+
+            <div class="baseStats">
+
+                <ul>
+                    <li>
+                      <span class="attributeTitle">Größe</span>
+                      <span class="attributeValue">0,7 m</span>
+                    </li>
+      
+                    <li>
+                      <span class="attributeTitle">Gewicht</span>
+                      <span class="attributeValue">6,9 kg</span>
+                    </li>
+      
+                  </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 </body>
