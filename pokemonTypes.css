@@ -1,0 +1,158 @@
+
+
+.typeGrass {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #61E3C5;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typePoison {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #A040A0;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeNormal {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #A8A878;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeFire {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #F08030;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeWater {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #6890F0;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeElectric {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #F8D030;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeIce {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #98D8D8;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeFighting {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #C03028;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeGround {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #E0C068;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeFlying {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #A890F0;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typePsychic {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #F85888;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeBug {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #A8B820;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+
+.typeRock {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #B8A038;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+.typeGhost {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #705898;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+.typeDragon {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #7038F8;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+.typeDark {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #705848;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+.typeSteel {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #B8B8D0;
+    border-radius: 30px;
+    padding: 1px 15px;
+}
+.typeFairy {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background-color: #F0B6BC;
+    border-radius: 30px;
+    padding: 1px 15px;
+}

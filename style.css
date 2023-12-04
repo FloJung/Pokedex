@@ -35,6 +35,7 @@ nav {
     height: 28px;
     width: 250px;
     margin-top: 20px;
+    padding: 5px 15px;
 }
 
 .pokeballSVG {
@@ -112,12 +113,20 @@ left: 130px;
 
 
 .overview {
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsla(0, 0%, 0%, 0.176);
-    height: 100vh;
-    z-index: 99;
+}
+
+.d-none {
+    display: none;
 }
 
 .pokemonOverview {
@@ -172,7 +181,17 @@ left: 130px;
 .navigation > a {
     color: gray;
     text-decoration: none;
+}
 
+.navigation > a:hover {
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+}
+
+.navigation > .activ {
+    font-weight: bold;
+    color: rgb(227, 58, 58);
+    text-decoration: underline;
 }
 
 .overviewName {
@@ -191,6 +210,14 @@ left: 130px;
     align-items: center;
     background-color: #2CDAB1;
     width: 250px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.baseStats > ul {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
 }
 
 .baseStats > ul > li {
@@ -198,4 +225,69 @@ left: 130px;
     flex-direction: column;
     list-style: none;
     width: 250px;
+    padding: 20px;
 }
+
+
+
+.attributeTitle {
+    padding: 5px 15px;
+    
+}
+
+.attributeValue {
+    padding: 5px 15px;
+}
+
+
+.pokemonType {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.attribute {
+    display: flex;
+}
+
+.statsWeaknesses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.baseMoveSet {
+    list-style: none; 
+}
+
+.baseMoveSet li:nth-child(1),
+.baseMoveSet li:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+
+.baseMoves > span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+    border-radius: 0px 10px 10px 10px;
+    border: solid 2px rgb(218, 217, 217);
+    padding: 15px;
+    font-size: 28px;
+    margin: 5px;
+    width: 250px;
+    color: #4f4f4f;
+    font-weight: bold;
+} 
+
+.baseMoves {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+

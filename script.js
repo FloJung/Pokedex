@@ -10,4 +10,11 @@ async function loadPokemon() {
     let responseAsJoson = await response.json();
 
     console.log(responseAsJoson);
+
+
+    let url1 = 'https://pokeapi.co/api/v2/characteristic/1/';  
+    let response1 = await fetch(url1);
+    let responseAsJoson1 = await response1.json();
+
+    console.log(responseAsJoson1);
 }
