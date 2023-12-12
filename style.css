@@ -60,11 +60,9 @@ nav {
     flex-wrap: wrap;
 }
 
-.pokeballSVGGrass {
-   
+.pokeballSVG {
     width: 200px;
     height: 200px;
-    fill: #60E3C4;
 }
 
 .pokeballSVGCase {
@@ -73,10 +71,9 @@ top: 40px;
 left: 130px;
 }
 
-.pokemonCaseGrass {
+.pokemonCase {
     position: relative;
     min-height: 150px;
-    background-color: #2CDAB1;
     width: 250px;
     padding: 25px;
     border-radius: 30px;
@@ -84,14 +81,6 @@ left: 130px;
     margin: 3px;
 }
 
-.type {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #61E3C5;
-    border-radius: 30px;
-    padding: 1px;
-}
 
 .tag {
     display: flex;
@@ -107,7 +96,7 @@ left: 130px;
     position: relative;
     width: 150px;
     left: 120px;
-    top: -35px;
+    top: -45px;
     z-index: 3;
 }
 
@@ -291,3 +280,8 @@ left: 130px;
     justify-content: space-between; 
 }
 
+.orderImge {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}

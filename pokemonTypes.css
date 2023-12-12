@@ -1,158 +1,236 @@
-
-
-.typeGrass {
+.types {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 60px;
-    background-color: #61E3C5;
     border-radius: 30px;
     padding: 1px 15px;
+    margin-top: 3px;
+}
+
+.typeGrass {
+    background-color: #9CE6D0;
 }
 
 .typePoison {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #A040A0;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #C183C1;
 }
 
 .typeNormal {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #A8A878;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #C4C4A4;
 }
 
 .typeFire {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #F08030;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #F5AC78;
 }
 
 .typeWater {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #6890F0;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #9DB7F5;
 }
 
 .typeElectric {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #F8D030;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #FAE078;
 }
 
 .typeIce {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #98D8D8;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #BCE6E6;
 }
 
 .typeFighting {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #C03028;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #D67873;
 }
 
 .typeGround {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #E0C068;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #ECD6A3;
 }
 
 .typeFlying {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #A890F0;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #C6B7F5;
 }
 
 .typePsychic {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #F85888;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #FA92B2;
 }
 
 .typeBug {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #A8B820;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #C6D16E;
 }
 
 .typeRock {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #B8A038;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #D1C17D;
 }
+
 .typeGhost {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #705898;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #A292BC;
 }
+
 .typeDragon {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #7038F8;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #A27DFA;
 }
+
 .typeDark {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #705848;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #A29288;
 }
+
 .typeSteel {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #B8B8D0;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #D1D1E0;
 }
+
 .typeFairy {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background-color: #F0B6BC;
-    border-radius: 30px;
-    padding: 1px 15px;
+    background-color: #F4BDC9;
+}
+
+
+
+
+/* --------------------------------------------- */
+
+.pokeballSVGGrass {
+    fill: #9CE6D0 !important;
+}
+
+.pokeballSVGPoison {
+    fill: #C183C1 !important;
+}
+
+.pokeballSVGNormal {
+    fill: #C4C4A4 !important;
+}
+
+.pokeballSVGFire {
+    fill: #F5AC78 !important;
+}
+
+.pokeballSVGWater {
+    fill: #9DB7F5 !important;
+}
+
+.pokeballSVGElectric {
+    fill: #FAE078 !important;
+}
+
+.pokeballSVGIce {
+    fill: #BCE6E6 !important;
+}
+
+.pokeballSVGFighting {
+    fill: #D67873 !important;
+}
+
+.pokeballSVGGround {
+    fill: #ECD6A3 !important;
+}
+
+.pokeballSVGFlying {
+    fill: #C6B7F5 !important;
+}
+
+.pokeballSVGPsychic {
+    fill: #FA92B2 !important;
+}
+
+.pokeballSVGBug {
+    fill: #C6D16E !important;
+}
+
+.pokeballSVGRock {
+    fill: #D1C17D !important;
+}
+
+.pokeballSVGGhost {
+    fill: #A292BC !important;
+}
+
+.pokeballSVGDragon {
+    fill: #A27DFA !important;
+}
+
+.pokeballSVGDark {
+    fill: #A29288 !important;
+}
+
+.pokeballSVGSteel {
+    fill: #D1D1E0 !important;
+}
+
+.pokeballSVGFairy {
+    fill: #F4BDC9 !important;
+}
+
+
+
+/* --------------------------------------- */
+
+.pokemonCaseGrass {
+    background-color: #2CDAB1;
+}
+
+.pokemonCaseFire {
+    background-color: #F08030;
+}
+
+.pokemonCasePoison {
+    background-color: #F08030;
+}
+
+.pokemonCaseNormal {
+    background-color: #A8A878 ;
+}
+
+.pokemonCaseWater {
+    background-color: #6890F0 ;
+}
+
+.pokemonCaseElectric {
+    background-color: #F8D030 ;
+}
+
+.pokemonCaseIce {
+    background-color: #98D8D8 ;
+}
+
+.pokemonCaseFighting {
+    background-color: #C03028  ;
+}
+
+.pokemonCaseGround {
+
+    background-color: #E0C068 ;
+}
+
+.pokemonCaseFlying {
+    background-color: #A890F0 ;
+}
+
+.pokemonCasePsychic {
+    background-color: #F85888 ;
+}
+
+.pokemonCaseBug {
+    background-color: #A8B820 ;
+}
+
+.pokemonCaseRock {
+    background-color: #B8A038 ;
+}
+
+.pokemonCaseGhost {
+    background-color: #705898 ;
+}
+
+.pokemonCaseDragon {
+    background-color: #7038F8 ;
+}
+
+.pokemonCaseDark {
+    background-color: #705848 ;
+}
+
+.pokemonCaseSteel {
+    background-color: #B8B8D0 ;
+}
+
+.pokemonCaseFairy {
+    background-color: #EE99AC  ;
 }
