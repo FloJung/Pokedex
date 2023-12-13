@@ -96,7 +96,7 @@ left: 130px;
     position: relative;
     width: 150px;
     left: 120px;
-    top: -45px;
+    top: -63px;
     z-index: 3;
 }
 
@@ -177,7 +177,7 @@ left: 130px;
     text-decoration: none;
 }
 
-.navigation > .activ {
+.navigation > a.activ {
     font-weight: bold;
     color: rgb(227, 58, 58);
     text-decoration: underline;

@@ -11,74 +11,92 @@
 
 .typeGrass {
     background-color: #9CE6D0;
+    margin: 5px;
 }
 
 .typePoison {
     background-color: #C183C1;
+    margin: 5px;
 }
 
 .typeNormal {
     background-color: #C4C4A4;
+    margin: 5px;
 }
 
 .typeFire {
     background-color: #F5AC78;
+    margin: 5px;
 }
 
 .typeWater {
     background-color: #9DB7F5;
+    margin: 5px;
 }
 
 .typeElectric {
     background-color: #FAE078;
+    margin: 5px;
 }
 
 .typeIce {
     background-color: #BCE6E6;
+    margin: 5px;
 }
 
 .typeFighting {
     background-color: #D67873;
+    margin: 5px;
 }
 
 .typeGround {
     background-color: #ECD6A3;
+    margin: 5px;
 }
 
 .typeFlying {
     background-color: #C6B7F5;
+    margin: 5px;
 }
 
 .typePsychic {
     background-color: #FA92B2;
+    margin: 5px;
 }
 
 .typeBug {
     background-color: #C6D16E;
+    margin: 5px;
 }
 
 .typeRock {
     background-color: #D1C17D;
+    margin: 5px;
 }
 
 .typeGhost {
     background-color: #A292BC;
+    margin: 5px;
 }
 
 .typeDragon {
     background-color: #A27DFA;
+    margin: 5px;
 }
 
 .typeDark {
     background-color: #A29288;
+    margin: 5px;
 }
 
 .typeSteel {
     background-color: #D1D1E0;
+    margin: 5px;
 }
 
 .typeFairy {
     background-color: #F4BDC9;
+    margin: 5px;
 }
 
 
