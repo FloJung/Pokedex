@@ -182,73 +182,90 @@
 
 .pokemonCaseGrass {
     background-color: #2CDAB1;
+    cursor: pointer;
 }
 
 .pokemonCaseFire {
     background-color: #F08030;
+    cursor: pointer;
 }
 
 .pokemonCasePoison {
-    background-color: #F08030;
+    background-color: #a96aa9;
+    cursor: pointer;
 }
 
 .pokemonCaseNormal {
     background-color: #A8A878 ;
+    cursor: pointer;
 }
 
 .pokemonCaseWater {
     background-color: #6890F0 ;
+    cursor: pointer;
 }
 
 .pokemonCaseElectric {
     background-color: #F8D030 ;
+    cursor: pointer;
 }
 
 .pokemonCaseIce {
     background-color: #98D8D8 ;
+    cursor: pointer;
 }
 
 .pokemonCaseFighting {
     background-color: #C03028  ;
+    cursor: pointer;
 }
 
 .pokemonCaseGround {
-
     background-color: #E0C068 ;
+    cursor: pointer;
 }
 
 .pokemonCaseFlying {
     background-color: #A890F0 ;
+    cursor: pointer;
 }
 
 .pokemonCasePsychic {
     background-color: #F85888 ;
+    cursor: pointer;
 }
 
 .pokemonCaseBug {
     background-color: #A8B820 ;
+    cursor: pointer;
 }
 
 .pokemonCaseRock {
     background-color: #B8A038 ;
+    cursor: pointer;
 }
 
 .pokemonCaseGhost {
     background-color: #705898 ;
+    cursor: pointer;
 }
 
 .pokemonCaseDragon {
     background-color: #7038F8 ;
+    cursor: pointer;
 }
 
 .pokemonCaseDark {
     background-color: #705848 ;
+    cursor: pointer;
 }
 
 .pokemonCaseSteel {
     background-color: #B8B8D0 ;
+    cursor: pointer;
 }
 
 .pokemonCaseFairy {
     background-color: #EE99AC  ;
+    cursor: pointer;
 }

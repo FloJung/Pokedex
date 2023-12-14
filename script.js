@@ -5,9 +5,7 @@
 let currentPokemonArray = [];
 let weaknessesArray = [];
 let currentURL = [];
-let limit = 15;
-let currentIndex = 0;
-let stepSize = 25;
+let limit = 10;
 
 
 async function loadPokemon() {
@@ -26,6 +24,15 @@ async function loadPokemon() {
     render();
 }
 
+function loadMorePokemon() {
+    limit = limit + 15;
+
+    currentPokemonArray = [];
+    weaknessesArray = [];
+    currentURL = [];
+    loadPokemon();
+}
+
 
 function render() {
     renderPokemonInfo();
@@ -34,7 +41,6 @@ function render() {
     pokemonWithTwoTypes();
     typePokemonOne();
     typePokemonTwo();
-    
 }
 
 
@@ -95,10 +101,10 @@ function pokemonWithTwoTypes() {
 
             document.getElementById(`typeOfPokemon${[i]}`).innerHTML = `
                                     <div id="typeOfPokemonOne${[i]}" class="types ">
-                                    <span >${typeFirst}</span>
+                                    <span >${typeFirst.charAt(0).toUpperCase() + typeFirst.slice(1)}</span>
                                     </div>
                                     <div id="typeOfPokemonTwo${[i]}" class="types ">
-                                        <span >${typeSecond}</span>
+                                        <span >${typeSecond.charAt(0).toUpperCase() + typeSecond.slice(1)}</span>
                                     </div>
                                 `;
         
@@ -107,7 +113,7 @@ function pokemonWithTwoTypes() {
             document.getElementById(`typeOfPokemon${[i]}`).innerHTML = ``;
             document.getElementById(`typeOfPokemon${[i]}`).innerHTML = `
             <div id="typeOfPokemonOne${[i]}" class="types ">
-            <span >${typeFirst}</span>
+            <span >${typeFirst.charAt(0).toUpperCase() + typeFirst.slice(1)}</span>
             </div>`;
         }
         
@@ -220,12 +226,12 @@ async function weakList() {
 
     for (let j = 0; j < weaknessesArray.length; j++) {
         const elementLi = weaknessesArray[j];
+        
     
     for (let i = 0; i < elementLi['damage_relations']['double_damage_from'].length; i++) {
+        let weaknessesName = elementLi['damage_relations']['double_damage_from'][i]['name'];
         let newID = `weakList${i}_${j}`;
-         weaknessesList.innerHTML += `
-                <li id="${newID}" class="types ">${elementLi['damage_relations']['double_damage_from'][i]['name']}</li>
-    `;
+         weaknessesList.innerHTML += `<li id="${newID}" class="types ">${weaknessesName.charAt(0).toUpperCase() + weaknessesName.slice(1)}</li>`;
 
             const typeName = elementLi['damage_relations']['double_damage_from'][i]['name'];
             const className = `type${typeName.charAt(0).toUpperCase() + typeName.slice(1)}`;
@@ -246,7 +252,8 @@ function movesList(i) {
 
     for (let j = 0; j < 4; j++) {
         const element = currentPokemonArray[i];
-        movesList.innerHTML += `<span class="typeBug">${element['moves'][j]['move']['name']}</span>`
+        let moveName = element['moves'][j]['move']['name'];
+        movesList.innerHTML += `<span class="typeBug">${moveName.charAt(0).toUpperCase() + moveName.slice(1)}</span>`
     }
     
 }
@@ -278,15 +285,15 @@ function CreateTheTypesForAbout(i) {
         document.getElementById(`pokemonTypesID`).innerHTML = ``;
  
          document.getElementById(`pokemonTypesID`).innerHTML = `
-         <span id="typeColor0"  class="types ">${typeFirst}</span>
-         <span id="typeColor1" class="types ">${typeSecond}</span>
+         <span id="typeColor0"  class="types ">${typeFirst.charAt(0).toUpperCase() + typeFirst.slice(1)}</span>
+         <span id="typeColor1" class="types ">${typeSecond.charAt(0).toUpperCase() + typeSecond.slice(1)}</span>
                              `;
      
      } else {
          let typeFirst = secondTypeOfPokemon['types'][0]['type']['name'];
          document.getElementById(`pokemonTypesID`).innerHTML = ``;
          document.getElementById(`pokemonTypesID`).innerHTML = `
-         <span id="typeColor0" class="types ">${typeFirst}</span>`;
+         <span id="typeColor0" class="types ">${typeFirst.charAt(0).toUpperCase() + typeFirst.slice(1)}</span>`;
      }
 }
 

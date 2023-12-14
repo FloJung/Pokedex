@@ -16,6 +16,38 @@ nav {
     padding: 10px;
 }
 
+.load {
+    padding: 5px 20px;
+    background-color: #FA6555;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.load:hover {
+    background-color: #ef6c5d;
+    color: #e33a3a;
+}
+
+footer {
+    height: 70px;
+    background-color: #FA6555;
+    border-radius: 15px 15px 0 0;
+    margin-top: 50px;
+}
+
+.pokedexOrientation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .headline {
     display: flex;
     justify-content: center;
@@ -25,8 +57,9 @@ nav {
 
 .headline > h1 {
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 64px;
     z-index: 3;
+    text-decoration: underline;
 }
 
 .headline > input {
@@ -58,6 +91,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .pokeballSVG {
@@ -179,7 +213,7 @@ left: 130px;
 
 .navigation > a.activ {
     font-weight: bold;
-    color: rgb(227, 58, 58);
+    color: #e33a3a;
     text-decoration: underline;
 }
 
@@ -284,4 +318,77 @@ left: 130px;
     display: flex;
     flex-direction: column;
     height: 120px;
+}
+
+
+
+@media (max-width: 750px) {
+    .overviewPokemon {
+        width: 400px;
+    }
+    .stats {
+        width: 400px;
+    }
+    .pokemonType {
+        margin-left: 0;
+    }
+    .statsWeaknesses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .baseMoves {
+        justify-content: center;
+    }
+    .pokedexCase {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 550px) {
+    .overviewPokemon {
+        width: 300px;
+    }
+    .stats {
+        width: 300px;
+    }
+    .attribute{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .pokedexCase {
+        padding: 0; 
+    }
+}
+
+@media (max-width: 450px) {
+    .overviewPokemon {
+        width: 150px;
+    }
+    .stats {
+        width: 150px;
+    }
+    .navigation {
+        flex-direction: column;
+        font-size: 18px;
+    }
+    #pokemonText {
+        font-size: 15px;
+    }
+    .baseStats {
+       width: 200px;
+    }
+    .statsWeaknesses {
+        width: 200px;
+    }
+    .weaknesses {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .overviewName {
+        flex-direction: column;
+    }
+    .pokedexCase {
+        padding: 0; 
+    }
 }

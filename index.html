@@ -20,22 +20,15 @@
 <body onload="loadPokemon()">
 
 <nav>
-    <div class="pokeballSVGHead">
-        <svg class="pokeballSVG" viewBox="0 0 8.467 8.467">
-            <path d="M4.232 289.46a3.307 3.307 0 0 0-3.271 2.844h2.324c.172-.35.53-.595.947-.595.416 0 .774.244.946.595h2.325a3.307 3.307 0 0 0-3.271-2.845zM.944 293.098a3.307 3.307 0 0 0 3.288 2.976 3.307 3.307 0 0 0 3.29-2.976h-2.29c-.14.42-.534.728-1 .728-.467 0-.86-.308-1-.728z" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
-            <path d="M4.232 292.123a.646.646 0 0 0-.644.644c0 .354.29.644.644.644.354 0 .644-.29.644-.644a.647.647 0 0 0-.644-.644zm0 .264c.21 0 .38.169.38.38s-.17.38-.38.38a.377.377 0 0 1-.38-.38c0-.211.168-.38.38-.38z" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="#E15B4D" color="#000" enable-background="accumulate" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(0 -288.533)" class="color3b3c3d svgShape"></path>
-        </svg>
-    </div>
     <div class="headline">
-        <h1>What Pokemon are you looking for?</h1>
-        <input type="text">
+        <h1>Pokedex</h1>
     </div>
-    
 </nav>
-
+    <div class="pokedexOrientation">
     <div id="pokedexCaseID" class="pokedexCase">
     </div>
-    
+    <button class="load" onclick="loadMorePokemon()">Load More</button>
+    </div>
 
 </div>
 <div id="pokemonOverAll">
@@ -44,7 +37,8 @@
     </div>
 </div>
 
-
+<footer>
+</footer>
 
 </body>
 </html>

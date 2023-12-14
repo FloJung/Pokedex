@@ -1,6 +1,7 @@
 function overview(i) {
     let pokemonId = currentPokemonArray[i];
-
+    let pokemonName = pokemonId['name'];
+    let pokemonIdName = pokemonId['id'];
     let overview = document.getElementById('openOverview');
     overview.innerHTML = '';
     overview.innerHTML =`
@@ -14,8 +15,8 @@ function overview(i) {
                 </div>
                     <div class="stats">
                         <div class="overviewName">
-                            <h1>${pokemonId['name']}</h1>
-                            <p>#00${pokemonId['id']}</p>
+                            <h1>${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</h1>
+                            <p>#00${pokemonIdName}</p>
                         </div>
                         <div class="navigation">
                             <a href="#" onclick="updateActiveLink(this); about(${i});">About</a>
@@ -34,10 +35,11 @@ function overview(i) {
 
 
 function renderPokemonInfoHTML(updatetPokemon, i) {
+    let pokemonName = updatetPokemon['name'];
     return `
     <div id="typeOfPokemonClass${[i]}" class="pokemonCase" onclick="openOverview('${i}')">
         <div class="tag">
-            <h2 id="pokemonName">${updatetPokemon['name']}</h2>
+            <h2 id="pokemonName">${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</h2>
             <p id="indexNummber">#00${updatetPokemon['id']}</p>
         </div>
         <div class="orderImge">
